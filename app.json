@@ -37,12 +37,20 @@
       [
         "expo-font",
         {
-          "fonts": ["./assets/fonts/Commissioner.ttf"]
+          "fonts": [
+            "./assets/fonts/Commissioner.ttf"
+          ]
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "da43c789-899c-41b4-9217-8eeda551e038"
+      }
     }
   }
 }

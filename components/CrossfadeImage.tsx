@@ -23,6 +23,7 @@ const CrossfadeImage = ({ source }: CrossfadeImageProps) => {
     }).start(() => {
       setPrevSource(source);
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [source]);
 
   return (

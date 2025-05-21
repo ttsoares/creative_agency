@@ -1,50 +1,92 @@
-# Welcome to your Expo app 👋
+# Frontend Mentor - Creative agency single page site solution
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a solution to the [Creative agency single page site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/creative-agency-singlepage-site-Pq6V3I2RM). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Get started
+## Table of contents
 
-1. Install dependencies
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-   ```bash
-   npm install
-   ```
+## Overview
 
-2. Start the app
+### The challenge
 
-   ```bash
-   npx expo start
-   ```
+Users should be able to:
 
-In the output, you'll find options to open the app in a
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Navigate the slider using either their mouse/trackpad or keyboard
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Screenshot
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+![](./screenshot.jpg)
 
-## Get a fresh project
+### Links
 
-When you're ready, run:
+- Solution URL: [Add solution URL here](https://github.com/ttsoares/creative_agency)
+- Live Site URL: [Add live site URL here](https://creativeagency.expo.app)
 
-```bash
-npm run reset-project
+## My process
+
+### Built with
+
+- React Native syntax
+- TailwindCSS custom properties
+- Animations
+- SVG to React components
+- Desktop-first workflow
+- [React Native](https://reactnative.dev/) - JS framework.
+- [Nativewind](https://www.nativewind.dev) - TailwindCSS for React Native.
+- [Expo Go](https://expo.dev/) - Universal native apps with React that run on Android, iOS, and the web.
+
+### What I learned
+
+Expanded my understanding about how to apply animations in the context of React Native with Nativewind.
+
+```jsx
+return (
+  <View className="w-full h-auto relative">
+    {prevSource && (
+      <Image
+        source={prevSource}
+        resizeMode="cover"
+        className="absolute w-full h-full"
+      />
+    )}
+    <Animated.Image
+      source={source}
+      resizeMode="cover"
+      className="absolute w-full h-full"
+      style={{ opacity: fadeAnim }}
+    />
+  </View>
+);
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Continued development
 
-## Learn more
+Still just scratching the surface of React Native's environment. Also struggling with how to manage absolute positioning across multiple screen sizes.
 
-To learn more about developing your project with Expo, look at the following resources:
+### Useful resources
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- [Expo Go](https://www.youtube.com/watch?v=XgWENEf3oFw&list=PLC3y8-rFHvwgVmqbtQkPDxkvDf6w5_eGA) - Frontend Made Easy.
+- [Nativewind](https://www.nativewind.dev/getting-started/installation) - Documentation.
 
-## Join the community
+## Author
 
-Join our community of developers creating universal apps.
+- Website - [Thomas TS](https://buildesign.vercel.app/)
+- Frontend Mentor - [@ttsoares](https://www.frontendmentor.io/profile/ttsoares)
+- Linkedin - [thomas-soares-6791781b/](https://www.linkedin.com/in/thomas-soares-6791781b/)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Acknowledgments
+
+Mentorship of different AIs like ChatGPT, DeepSeek and Windsurf.
